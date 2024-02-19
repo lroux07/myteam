@@ -3,6 +3,8 @@
 :root {
     --primary-bg-color: #014E56;
     --secondary-bg-color: #012F34;
+    --accent-bg-color: #004047;
+    --text-color: #F67E7E;
 }
 
 * {
@@ -50,10 +52,10 @@ h1 {
 }
 
 span {
-    color: #F67E7E;
+    color: var(--text-color);
 }
 
-p {
+.header-paragraph {
     margin: 5% 5% 15% 0;
     font-size: 1rem;
     line-height: 2.3rem;
@@ -65,7 +67,7 @@ p {
     margin: 0 1rem;
 }
 
-section {
+main {
     background-color: var(--secondary-bg-color);
 }
 
@@ -77,11 +79,51 @@ section {
 }
 
 h2 {
-    font-size: 1.6rem;
-    margin-left: 10%;
+    font-size: 1.8rem;
+    margin: 0 6%;
 }
 
 .title-section img {
     position: relative;
     left: 24%;
+    top: 0;
+}
+
+
+/* SEC 1 */
+
+.sec1 {
+    padding: 10% 6%;
+}
+
+.sec1 article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5% 0;
+}
+
+h3 {
+    color: var(--text-color);
+    margin: 3% 0;
+    font-size: 1.3rem;
+}
+
+article p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+.experienced-individuals::before {
+    content: url('/public/assets/icon-person.svg');
+}
+
+.easy-to-implement::before {
+    content: url('/public/assets/icon-cog.svg');
+}
+
+.enhanced-productivity::before {
+    content: url('/public/assets/icon-chart.svg');
 }
