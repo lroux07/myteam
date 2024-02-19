@@ -3,8 +3,10 @@
 :root {
     --primary-bg-color: #014E56;
     --secondary-bg-color: #012F34;
-    --accent-bg-color: #004047;
-    --text-color: #F67E7E;
+    --accent-bg-color: #F67E7E;
+    --text-primary-color: #F67E7E;
+    --text-secondary-color: #79C8C7;
+    --text-accent-color: #012F34;
 }
 
 * {
@@ -35,6 +37,10 @@ nav {
     justify-content: space-between;
     padding: 15% 5%;
     width: 100%;
+    /* position: fixed;
+    top: 0;
+    background-color: var(--primary-bg-color);
+    z-index: 1; */
 }
 
 hgroup {
@@ -52,7 +58,7 @@ h1 {
 }
 
 span {
-    color: var(--text-color);
+    color: var(--text-primary-color);
 }
 
 .header-paragraph {
@@ -106,7 +112,7 @@ h2 {
 }
 
 h3 {
-    color: var(--text-color);
+    color: var(--text-primary-color);
     margin: 3% 0;
     font-size: 1.3rem;
 }
@@ -126,4 +132,108 @@ article p {
 
 .enhanced-productivity::before {
     content: url('/public/assets/icon-chart.svg');
+}
+
+
+/* Sec 2 */
+
+.sec2 {
+    background-color: #004047;
+}
+
+.sec2 h2 {
+    text-align: center;
+    margin: 10% 15%;
+}
+
+.sec2 h2 span {
+    color: var(--text-secondary-color);
+}
+
+.sec2 .profile {
+    text-align: center;
+    margin: 10%;
+}
+
+.sec2 blockquote::before {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    content: url('/public/assets/icon-quotes.svg');
+    background-repeat: no-repeat;
+}
+
+.sec2 blockquote {
+    margin-bottom: 10%;
+}
+
+.sec2 .profile h3 {
+    color: var(--text-secondary-color);
+    margin: 0;
+}
+
+.sec2 .profile p {
+    margin: 3% 0;
+}
+
+.sec2 .profile-picture {
+    border-radius: 100%;
+    border: 2px solid #C4FFFE;
+    max-height: 6rem;
+}
+
+.final-secion {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #002529;
+    color: var(--text-accent-color);
+    
+}
+
+footer .footer-first {
+    background-color: var(--accent-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+footer h2 {
+    margin: 25% 20% 10% 20%;
+    font-weight: 800;
+    font-size: 2.3rem;
+}
+
+button {
+    background: none;
+    border: 3px solid black;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    padding: 20px;
+    font-weight: 600;
+    width: 50%;
+}
+
+.footer-div {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+.footer-final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15% 0;
 }
