@@ -10,9 +10,13 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="header-nav">
         <img src="/public/assets/logo.svg" alt="logo">
-        <img src="/public/assets/icon-hamburger.svg" alt="menu" class="menu">
+        <img src="/public/assets/icon-hamburger.svg" alt="open menu" id="menu" class="menu">
+        
+        <div class="divMenu">
+          <img src="/public/assets/icon-close.svg" alt="close menu" id="closeMenu" class="closeMenu">
+        </div>
       </nav>
 
      <hgroup>
@@ -27,23 +31,29 @@
       <h2>Build & manage distributed teams like no one else.</h2>
       <img src="/public/assets/bg-pattern-home-3.svg" alt="decoration main">
     </article>
-      
-    <section class="sec1">
-      <article class="experienced-individuals">
-        <h3>Experienced Individuals</h3>
-        <p>Our network is made up of highly experienced professionals who are passionate about what they do.</p>
-      </article>
 
-      <article class="easy-to-implement">
-        <h3>Easy to Implement</h3>
-        <p>Our processes have been refined over years of implementation meaning our teams always deliver.</p>
-      </article>
+    <dl>
+      <dt class="experienced-individuals">
+        Experienced Individuals
+      </dt>
+      <dd>
+        Our network is made up of highly experienced professionals who are passionate about what they do.
+      </dd>
 
-      <article class="enhanced-productivity">
-        <h3>Enhanced Productivity</h3>
-        <p>Our customized platform with in-built analytics helps you manage your distributed teams.</p>
-      </article>
-    </section>
+      <dt class="easy-to-implement">
+        Easy to Implement
+      </dt>
+      <dd>
+        Our processes have been refined over years of implementation meaning our teams always deliver.
+      </dd>
+
+      <dt class="enhanced-productivity">
+        Enhanced Productivity
+      </dt>
+      <dd>
+        Our customized platform with in-built analytics helps you manage your distributed teams.
+      </dd>
+    </dl>
 
     <section class="sec2">
       <img src="/public/assets/bg-pattern-home-4-about-3.svg" alt="decoration">
@@ -97,6 +107,44 @@
 
       <article class="footer-final">
         <img src="/public/assets/logo.svg" alt="logo" class="logo">
+
+        <nav class="footer-nav">
+          <ul>
+            <li>
+              <a href="">home</a>
+            </li>
+            <li>
+              <a href="">about</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address>
+          987 Hillcrest Lane<br />
+          Irvine, CA<br />
+          California 92714<br />
+          Call Us : <a href="tel:949-833-7432">949-833-7432</a>
+        </address>
+
+        <ul class="ul-icons">
+          <li>
+            <a href="https://www.facebook.com/?locale=fr_FR">
+              <img src="/public/assets/icon-facebook.svg" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.fr/">
+              <img src="/public/assets/icon-pinterest.svg" alt="pinterest">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/?lang=fr">
+              <img src="/public/assets/icon-twitter.svg" alt="twitter">
+            </a>
+          </li>
+        </ul>
+
+        <small>Copyright 2020. All Rights Reserved</small>
       </article>
     </footer>
     <script type="module" src="/main.js"></script>
